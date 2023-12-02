@@ -3,21 +3,26 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\Application;
+use App\Services\FirestoreApiService;
 
 class AppServiceProvider extends ServiceProvider
+// class FirestoreApiServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Register services.
      *
      * @return void
      */
     public function register()
     {
-        //
+        $this->app->bind('FirestoreApi', function(Application $app){
+            return new FirestoreApiService();
+        });
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap services.
      *
      * @return void
      */
@@ -26,3 +31,4 @@ class AppServiceProvider extends ServiceProvider
         //
     }
 }
+

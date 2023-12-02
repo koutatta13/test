@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::view('/top', 'top');
+//Route::get('/test',  'App/Http/Controllers/HelloController@index');
+Route::get('/hello',  'App\Http\Controllers\HelloController@index');
+Route::get('/send',  'App\Http\Controllers\TestController@send');
+Route::post('/response',  'App\Http\Controllers\TestController@response');
+//Route::get('/test',  'App/Http/TestController@index');
