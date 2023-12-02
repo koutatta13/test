@@ -3,15 +3,9 @@
 <div class="sample-swiper carousel">
     <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="item item__blue">1</div>
-            </div>
-            <div class="swiper-slide swiper-slide-prev">
-                <div class="item item__yellow">2</div>
-            </div>
-            <div class="swiper-slide">
+        <div id="js-slideInclude" class="swiper-wrapper">
+            <!-- if no carousel registed -->
+            <div class="swiper-slide mx-auto">
                 <div class="item item__red">3</div>
             </div>
         </div>
@@ -28,7 +22,8 @@
     <!-- Slider main container -->
 </div>
 
-</div>
-
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+<script type="module" src="/js/include/top/top_carousel_getData.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="/js/include/top/top_carousel.js"></script>
