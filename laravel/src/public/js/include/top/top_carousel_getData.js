@@ -22,8 +22,8 @@ var target = document.getElementById('js-slideInclude');
 // if(target==null) {console.log("a");return} ;
 collection.get().then(snapshot => {
   // collection.where("status", "==", true).get().then(snapshot => {
-    console.log(snapshot)
   snapshot.forEach(data => {
+    console.log(data.data())
     dataList.push(data.data())
   });
   return dataList;
