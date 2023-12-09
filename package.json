@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "connect-ssi": "^1.1.1",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.4"
+  },
+  "scripts": {}
+}
