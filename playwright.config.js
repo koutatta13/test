@@ -72,7 +72,7 @@ module.exports = defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: {
          command: 'gulp',  //ローカルホストを起動させるコマンド 
-         url: 'http://localhost:3000',　//起動するローカルパスのroot
+         url: 'http://localhost:3000/',　//起動するローカルパスのroot
          reuseExistingServer: !process.env.CI, //既にポートが使われていた場合別のポートで起動
        },
 });

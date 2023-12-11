@@ -9,5 +9,8 @@
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.4"
   },
-  "scripts": {}
+  "scripts": {
+    "test":"node ./tests/00_config/createTest.node.js&& npx playwright test &&npx show-report",
+    "test:update":"node ./tests/00_config/createTest.node.js&& npx playwright test --update-snapshots"
+  }
 }

@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-test('visual-regression', async ({ page }) => {
+test('stopCarousel_test.html', async ({ page }) => {
   await page.goto('http://localhost:3000/test.html');
   await page.evaluate(() => {
     var parent= document.querySelector(".carousel");
