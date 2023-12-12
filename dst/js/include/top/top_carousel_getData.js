@@ -24,8 +24,9 @@ collection.where("status", "==", true).get().then(snapshot => {
   snapshot.forEach(data => {
     dataList.push(data.data())
   });
+  //console.log(dataList)
   return dataList;
-}).then(dataList => {
+}).then((dataList) => {
   console.log(dataList.length== 0);
   if (dataList.length == 0) {
     //例外処理なので　あまりきちんと考慮しないが崩れない程度に調整
@@ -40,6 +41,7 @@ collection.where("status", "==", true).get().then(snapshot => {
         data.imgPath + '" alt="'+data.alt+'"/></div>'
     })
     target.innerHTML = ele;
+    console.log(target.innerHTML)
     swiperInit();
   }
 });

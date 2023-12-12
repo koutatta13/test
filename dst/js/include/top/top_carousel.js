@@ -19,7 +19,7 @@ export function swiperInit() {
       disableOnInteraction: false,
     },
     slidesPerView: "auto",
-    loopedSlides: 6,
+    loopedSlides: 5,
     centeredSlides: true,
     loop: true,
     spaceBetween: 30,

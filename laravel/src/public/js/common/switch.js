@@ -1,6 +1,12 @@
 
 
 $(function() {
+    $("input.switch_button").forEach(element => {
+        element.checked&&$(this).parent().parent().parent().children(".switch_ON").hide();
+        element.checked||$(this).parent().parent().parent().children(".switch_ON").show();
+        element.checked||$(this).parent().parent().parent().children(".switch_OFF").hide();
+        element.checked&&$(this).parent().parent().parent().children(".switch_OFF").show();
+    });
     $("input.switch_button").on("change" ,function(e){
         // $(ele).parent('.switch_ON').display=ele.checked?"block":"none";
         // console.log($(ele).nextAll('.switch_ON'))

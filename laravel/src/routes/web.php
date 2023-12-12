@@ -15,9 +15,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::view('/', 'top');
 Route::view('/top', 'top');
 //Route::get('/test',  'App/Http/Controllers/HelloController@index');
 Route::get('/hello',  'App\Http\Controllers\HelloController@index');
