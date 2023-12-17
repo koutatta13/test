@@ -3,14 +3,15 @@
     "browser-sync": "^2.29.3",
     "connect-ssi": "^1.1.1",
     "gulp": "^4.0.2",
-    "gulp-connect": "^5.7.0"
+    "gulp-connect": "^5.7.0",
+    "simple-git": "^3.21.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.4"
   },
   "scripts": {
-    "test":"node ./tests/00_config/createTest.node.js&& npx playwright test &&npx show-report",
-    "test:update":"node ./tests/00_config/createTest.node.js&& npx playwright test --update-snapshots"
+    "test": "node ./tests/00_config/createTest.node.js&& npx playwright test &&npx show-report",
+    "test:update": "node ./tests/00_config/createTest.node.js&& npx playwright test --update-snapshots"
   }
 }
