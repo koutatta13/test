@@ -10,3 +10,4 @@ firebase_credentials.json
 playwright-report/
 .storybook
 stories
+tests/02_tests/

@@ -9,10 +9,10 @@ console.log("-------------")
 console.log(process.argv[2])
 init();
 function init(){
-    exec('gulp', (err, stdout, stderr) => {
-        if (err) { console.log(err); }
-        console.log(stdout);
-    });
+    // exec('gulp', (err, stdout, stderr) => {
+    //     if (err) { console.log(err); }
+    //     console.log(stdout);
+    // });
     branch()
         .then(name => startTest(name)) //=> 'master'
         .catch(console.error);
