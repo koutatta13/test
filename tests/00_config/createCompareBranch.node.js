@@ -5,7 +5,6 @@ const exec = require('child_process').exec;
 var name = "";
 console.log("-------------")
 console.log("-------------")
-console.log("-------------")
 console.log(process.argv[2])
 init();
 function init(){
