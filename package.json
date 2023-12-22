@@ -2,5 +2,8 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0"
+  },
+  "scripts": {
+    "test": "node ./tests/00_config/createTest.node.js&&node ./tests/00_config/createCompareBranch.node.js $npm_config_commit"
   }
 }
