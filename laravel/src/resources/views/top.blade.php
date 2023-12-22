@@ -17,7 +17,7 @@
   <!--  /bootstrapライブラリ読み込み -->
 </head>
 
-<body>
+<body>aaaaaa
     <!-- header -->
     @include('include.header')
     <!-- /header -->
