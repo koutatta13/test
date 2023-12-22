@@ -6,7 +6,6 @@ var name = "";
 console.log("-------------")
 console.log("-------------")
 console.log("-------------")
-console.log("-------------")
 console.log(process.argv[2])
 init();
 function init(){
