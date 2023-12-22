@@ -1,0 +1,1 @@
+送信完了<?php /**PATH /data/resources/views/response.blade.php ENDPATH**/ ?>
