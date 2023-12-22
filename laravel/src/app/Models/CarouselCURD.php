@@ -46,7 +46,7 @@ class CarouselCURD
             'url'=> $url,
         ]);
     }
-    public function DeleteCarousel($id){
+    public function Deletearousel($id){
         DB::table('carousel')->where('id', $id)->delete();        
     }
 }

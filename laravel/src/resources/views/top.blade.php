@@ -23,7 +23,7 @@
     <!-- /header -->
     <div>
         <div class="p-4 text-end">
-        <input class="switch" data-switch-id="carousel" type="checkbox" data-toggle="switchbutton" checked data-onlabel="<i class='fa fa-play'></i> Play" data-offlabel="<i class='fa fa-pause'></i> Pause">
+        <input class="switch" data-switch-id="carousel" type="checkbox" data-toggle="switchbutton" checked data-onlabel="<i class='fa'></i> javaScript" data-offlabel="<i class='fa'></i> PHP">
 
         </div>
         <div id="switch_carousel_ON" style="display:block;">
@@ -33,7 +33,7 @@
         </div>
         <div id="switch_carousel_OFF" style="display:block;">
             <!-- top_carousel -->
-            @include('include.top.topphp_carousel')
+            @include('include.top.topphp_carousel',['carouselHTML' => $carouselHTML])
             <!-- /header -->
         </div>
     </div>

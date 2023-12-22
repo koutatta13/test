@@ -4,10 +4,7 @@
     <div class="swiper-container swiper-initialized swiper-horizontal swiper-pointer-events">
         <!-- Additional required wrapper -->
         <div id="js-slideInclude" class="swiper-wrapper">
-            <!-- if no carousel registed -->
-            <div class="swiper-slide mx-auto">
-                <div class="item item__red">3</div>
-            </div>
+            {!! $carouselHTML !!}
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">

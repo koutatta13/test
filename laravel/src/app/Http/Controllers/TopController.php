@@ -8,7 +8,7 @@ use Illuminate\Support\Str; //追加
 use Illuminate\Support\Facades\Hash; //追加
 use Google\Cloud\Firestore\FirestoreClient;
 
-class FirebaseController extends Controller
+class topController extends Controller
 {
     protected $db;
 
@@ -37,7 +37,7 @@ class FirebaseController extends Controller
         ]);
     }
 
-    public function loadTable() {
+    public function index() {
         $collection = $this->db->collection('carousel');
 
         //$document = $collection;
@@ -46,11 +46,11 @@ class FirebaseController extends Controller
         $innerHTML="";
         foreach ($documents as $document) {
             if ($document->exists()) {
-                dump($document->data()["alt"]);
+                $innerHTML=$innerHTML.'<div class="swiper-slide" ><img src="'.$document->data()["imgPath"].'" alt=""></div>';
                 //dump($document->data()->alt);
             } else {
             }
         }
+        return view('top',['carouselHTML' => $innerHTML]);
     }
 }
-
