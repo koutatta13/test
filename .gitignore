@@ -1,7 +1,6 @@
 node_modules/
 
 # test 
-test.md
 node_modules/
 /test-results/
 /playwright-report/
@@ -9,6 +8,5 @@ node_modules/
 /playwright/.cache/
 firebase_credentials.json
 playwright-report/
-tests/
 .storybook
 stories
