@@ -7,8 +7,14 @@
     <title>テスト</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
     <link rel="stylesheet" href="/css/index.css" />
-    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
+      <!--   jQueryライブラリ読み込み -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!--  /jQueryライブラリ読み込み -->
+
+  <!--   bootstrapライブラリ読み込み -->
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
+  <!--  /bootstrapライブラリ読み込み -->
 </head>
 
 <body>
@@ -17,16 +23,17 @@
     <!-- /header -->
     <div>
         <div class="p-4 text-end">
-            <input class="switch_button" data-switch-id="carousel" type="checkbox" data-toggle="switchbutton" checked data-size="lg" checked data-onlabel="PHP_USE" data-offstyle="success" data-offlabel="JS_USE">
+        <input class="switch" data-switch-id="carousel" type="checkbox" data-toggle="switchbutton" checked data-onlabel="<i class='fa fa-play'></i> Play" data-offlabel="<i class='fa fa-pause'></i> Pause">
+
         </div>
-        <div class="switch_ON">
+        <div id="switch_carousel_ON" style="display:block;">
             <!-- top_carousel -->
             @include('include.top.top_carousel')
             <!-- /header -->
         </div>
-        <div class="switch_OFF">
+        <div id="switch_carousel_OFF" style="display:block;">
             <!-- top_carousel -->
-            @include('include.top.top_carousel')
+            @include('include.top.topphp_carousel')
             <!-- /header -->
         </div>
     </div>

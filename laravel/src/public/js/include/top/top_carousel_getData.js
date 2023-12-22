@@ -23,12 +23,10 @@ var target = document.getElementById('js-slideInclude');
 collection.get().then(snapshot => {
   // collection.where("status", "==", true).get().then(snapshot => {
   snapshot.forEach(data => {
-    console.log(data.data())
     dataList.push(data.data())
   });
   return dataList;
 }).then(dataList => {
-  console.log(dataList.length== 0);
   if (dataList.length == 0) {
     //例外処理なので　あまりきちんと考慮しないが崩れない程度に調整
     document.querySelectorAll(".swiper-pagination").forEach(ele=>ele.style.display="none");
