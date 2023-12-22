@@ -3,6 +3,7 @@ const simpleGit = require('simple-git');
 const branch = require('git-branch');
 const exec = require('child_process').exec;
 var name = "";
+const commitId=process.argv[2];
 console.log("-------------")
 console.log("-------------")
 console.log(process.argv[2])
@@ -38,7 +39,7 @@ async function startTest(name) {
     console.log("checkout  |test/old-master");
     console.log("await OK? |"+res);
     res=false;
-    simpleGit().reset("hard", { process.argv[2] : null })
+    simpleGit().reset("hard", { commitId : null })
     console.log("create    |oldBranch")
     exec('npx playwright test --update-snapshots ', (err, stdout, stderr) => {
         if (err) { console.log(err); }
